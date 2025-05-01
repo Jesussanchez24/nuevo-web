@@ -1,0 +1,18 @@
+body, html { margin:0; padding:0; height:100%; font-family:Arial, sans-serif; }
+#app { display:grid; grid-template-columns:250px 1fr; height:100%; }
+.sidebar { background:#2f3e46; color:#fff; display:flex; flex-direction:column; justify-content:space-between; }
+.profile { text-align:center; padding:1rem; }
+.profile img { width:80px; border-radius:50%; }
+.sidebar nav button { background:none; border:none; color:#fff; padding:1rem; text-align:left; width:100%; font-size:1rem; cursor:pointer; }
+.sidebar nav button:hover, .sidebar nav button.active { background:#354f52; }
+.logout { background:#e63946; border:none; color:#fff; padding:1rem; cursor:pointer; }
+.main-content { display:flex; flex-direction:column; }
+header { display:flex; justify-content:space-between; align-items:center; padding:1rem; background:#84a98c; color:#fff; }
+.section { display:none; padding:1rem; overflow:auto; }
+.section.active { display:block; }
+textarea { width:100%; height:100px; padding:0.5rem; margin-bottom:0.5rem; }
+button { padding:0.5rem 1rem; margin-bottom:1rem; cursor:pointer; }
+.photo-grid { display:grid; grid-template-columns:repeat(auto-fill,100px); gap:0.5rem; }
+.dark body { background:#121212; color:#e0e0e0; }
+.dark .sidebar { background:#1c1c1c; }
+.dark header { background:#3a3a3a; }

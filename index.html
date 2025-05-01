@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-CLOUDX</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="assets/img/profile.png" alt="Perfil" />
+        <h3>Jesús del Carmen</h3>
+      </div>
+      <nav>
+        <button data-sec="notes"><i class='bx bx-note'></i> Notas</button>
+        <button data-sec="docs"><i class='bx bx-file'></i> Documentos</button>
+        <button data-sec="photos"><i class='bx bx-image'></i> Fotos</button>
+        <button data-sec="folders"><i class='bx bx-folder'></i> Carpetas</button>
+      </nav>
+      <button id="logout" class="logout"><i class='bx bx-log-out'></i> Cerrar sesión</button>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>JS-CLOUDX Pro</h1>
+        <button id="toggle-theme"><i class='bx bx-moon'></i></button>
+      </header>
+
+      <section id="notes" class="section active">
+        <h2>Notas</h2>
+        <textarea id="noteInput" placeholder="Escribe tu nota..."></textarea>
+        <button id="saveNote"><i class='bx bx-save'></i> Guardar</button>
+        <ul id="noteList"></ul>
+      </section>
+
+      <section id="docs" class="section">
+        <h2>Documentos</h2>
+        <input type="file" id="docInput" accept=".pdf,.doc,.docx,.txt" multiple />
+        <ul id="docList"></ul>
+      </section>
+
+      <section id="photos" class="section">
+        <h2>Fotos</h2>
+        <input type="file" id="photoInput" accept="image/*" multiple />
+        <div id="photoList" class="photo-grid"></div>
+      </section>
+
+      <section id="folders" class="section">
+        <h2>Carpetas</h2>
+        <input type="file" id="folderInput" webkitdirectory directory multiple />
+        <ul id="folderList"></ul>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
